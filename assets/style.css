@@ -1,0 +1,62 @@
+:root {
+    --fontcolor: purple;
+}
+
+body {
+    background-color: thistle;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    position: relative;
+    width: 30%;
+    background-color: thistle;
+    border: 2px;
+    border-color: green;
+    border-style: dashed;
+    margin: 1%;
+}
+
+article h1 {
+    background-color: thistle;
+    border: 2px;
+    border-color: black;
+    position: absolute;
+    bottom: 75%;
+    left: 25%;
+    font-size: 150%;
+    color: var(--fontcolor);
+
+}
+
+article .snippet {
+    color: white;
+    background-image: linear-gradient();
+}
+
+article .blurb {
+    color: var(--fontcolor);
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    main {
+        flex-direction: column;   
+    }
+
+    article {
+        width: 100%;
+    }
+
+}
