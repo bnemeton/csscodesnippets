@@ -6,6 +6,15 @@ body {
     background-color: thistle;
 }
 
+header h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
 main {
     width: 100%;
     display: flex;
@@ -20,15 +29,16 @@ article {
     border: 2px;
     border-color: green;
     border-style: dashed;
-    margin: 1%;
+    margin: 1% 1% 3% 1%;
 }
 
 article h1 {
     background-color: thistle;
     border: 2px;
+    border-style: solid;
     border-color: black;
     position: absolute;
-    bottom: 75%;
+    bottom: 80%;
     left: 25%;
     font-size: 150%;
     color: var(--fontcolor);
@@ -37,11 +47,16 @@ article h1 {
 
 article .snippet {
     color: white;
-    background-image: linear-gradient();
+    background-image: linear-gradient(green, darkgreen);
 }
 
 article .blurb {
+    padding-top: 7%;
     color: var(--fontcolor);
+}
+
+footer {
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
